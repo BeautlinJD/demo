@@ -1,38 +1,666 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(228, 228, 241);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.font{
+  font-size: large;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.one{
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+}
+.onesearch{
+  margin: 10px 50px 10px 10px;
+  background-color: white;
+  color: black;
+}
+.one1{
+  margin: 10px 30px 10px 90px;
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+.oneg{
+  margin: 10px 20px 10px 320px;
+  padding: 10px 10px 10px 10px;
+  background-color:white;
+  color: black;
+  text-align: justify;
+}
+.one2{
+  margin: 10px 30px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+.one2:hover{
+  background-color: blue;
   color: white;
+  border-radius: 10px 10px 10px 10px;
+}
+.one2 ul{
+  position:absolute;
+  margin-top: 0px;
+  padding: 10px 10px 10px 10px;
+  display:none;
+  list-style-type: none;
+}
+.one2:hover ul{
+  display: block;
+  background-color: white;
+  box-shadow: 2px 10px 10px 2px rgb(216, 212, 212);
+  border-radius:0px 0px 10px 10px;
+  color: black;
+  margin-top:12px;
+  margin-left: -10px;
+}
+.one2:hover li{
+  padding-top: 5px;
+  font-size: smaller;
+}
+.one3{
+  margin: 10px 30px 10px -10px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+.more{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+.more:hover{
+  background-color: rgb(233, 233, 255);
+  border-radius: 10px 10px 10px 10px;
+  border:1px solid rgb(211, 204, 204);
+}
+.more:hover li{
+  margin: 10px 10px 10px 10px;
+  padding:0px 5px 0px 5px;
+  font-size: smaller;
+}
+.more ul{
+  position:absolute;
+  margin-top: 2px;
+  
+  display:none;
+  list-style-type: none;
+}
+.more:hover ul{
+  display: block;
+  background-color: white;
+  box-shadow: 2px 10px 10px 2px rgb(216, 212, 212);
+  border-radius:0px 0px 10px 10px;
+  outline: black;
+  color: black;
+  margin-top: 10px;
+  margin-left: -148px;
+}
+.mr:hover{
+  
+  background-color: rgb(238, 233, 233);
+}
+.flipkart{
+  color: blue;
+}
+.plus{
+  color: rgb(248, 187, 95);
+}
+.right{
+  padding-right: 5px;
+}
+.left{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.lftup:hover{
+  transform:rotate(180deg);
+  padding-right: 5px;
+}
+.discount{
+  color: green;
+}
+.rating{
+  color: white;
+  background-color: green;
+  width:auto;
+  display: inline-block;
+  padding: 2px 2px 2px 2px;
+}
+.top{
+  padding-top: 10px;
+}
+.cartmt{
+  margin: 10px 10px 10px 10px;
+  padding: 30px 20px 40px 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-size: large;
+}
+.cartmtspc{
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+.cartmtspc1{
+  margin-bottom: 10px;
+}
+.snbutton{
+  border: none;
+  padding:10px 70px 10px 70px;
+  background-color: blue;
+  color: white;
+  font-size: medium;
+}
+.cart{
+  margin-bottom: 15px;
+  
+  padding: 3px 3px 3px 3px;
+}
+.spacing{
+  padding-left: 20px;
+}
+.session2{
+  list-style-type: none;
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  margin: 8px 10px 20px 10px;
+  background-color: white;
+}
+.ssn{
+  padding: 5px 5px 5px 5px;
+  margin: 10px 10px 10px 10px;
+}
+.bg{
+  background-color: white;
+  padding-top: 10px;
+  
+}
+.bg2{
+  background-color: white;
+  padding-top: 10px; 
+  
+}
+.bg4{
+  background-color: white;
+  padding-top: 0px;
+  padding-left: 10px;
+}
+.bg1{
+  margin-top: 20px;
+}
+.logo{
+  border-radius:50px 50px 50px 50px;
+}
+.searchbar{
+  list-style-type: none;
+  display: flex;
+  background-color: rgb(217, 235, 255);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  width:270%;
+  color: grey;
+}
+.textbox{
+  background: transparent;
+  border: none;   
+  width:270%;
+}
+.textbox:focus{
+  outline:none;
+  width:310%;
+}
+.xplor{
+  font-size: smaller;
+}
+.logofont{
+  font-size: smaller;
+}
+.linktext{
+  text-decoration: none;
+  color: black;
+}
+.linktext:hover{
+  color:blue;
+}
+.log{
+  display: flex;
+}
+.log1{
+  background-color: blue;
+  color: white;
+  margin:30px 0px 30px 300px;
+  padding:50px 50px 50px 50px;
+  list-style-type: none;
+}
+.log2{
+  background-color: white;
+  color: grey;
+  list-style-type: none;
+  margin:30px 0px 30px 0px;
+  padding:100px 50px 50px 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.logp{
+  color: rgb(213, 203, 203);
+  padding-bottom: 100%;
+  font-size: large;
+}
+.logsub{
+  margin-top: 60px ;
+}
+.logbutton{
+  background-color: orangered;
+  margin-top:60px;
+  border:none;
+  color:white;
+  padding:15px 200px 15px 200px;
+  font-size: medium;
+}
+.logdisp{
+  color:black;
+  margin: 20px 0px 0px 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.su{
+  display:flex;
+}
+.su1{
+  background-color: blue;
+  color: white;
+  margin:30px 0px 30px 300px;
+  padding:50px 50px 50px 50px;
+  list-style-type: none; 
+}
+.su2{
+  background-color: white;
+  color: grey;
+  margin:30px 0px 30px 0px;
+  padding:100px 50px 50px 50px;
+  list-style-type: none;
+}
+.sup{
+  color:rgb(227, 221, 221);
+  padding-bottom:100%;
+  font-size: large;
+}
+.sureq{
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: small;
+  color:grey;
+}
+.subutton{
+  background-color: orangered;
+  border:none;
+  color:white;
+  padding:15px 200px 15px 200px;
+  margin-bottom: 20px;
+  font-size: medium;
+}
+.sudispno{
+  color: black;
+  margin: 0px 0px 0px 80px;
+}
+.sudispps{
+  color: black;
+  margin: 5px 0px 0px 80px;
+}
+.sudispcps{
+  color: black;
+  margin: 5px 0px 0px 60px;
+}
+
+
+@media only screen and (max-width:1080px){
+  .logo{
+    display:block;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .one1{
+    display: block;
+    margin: 10px 10px 10px 30px;
+    padding:5px 5px 5px 5px;
   }
+  .onesearch{
+    display:block;
+    margin: 10px 10px 10px 10px;
+    padding:5px 5px 5px 5px;
+  }
+  .oneg{
+    display: block;
+    
+    margin: 20px 10px 10px 215px;
+    padding:10px 5px 5px 5px;
+  }
+  .one2{
+    display: block;
+    margin: 20px 0px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .one2 ul{
+    position: absolute;
+    display: none;
+  }
+  .one2:hover ul{
+    margin-top:10px;
+    margin-left: -5px ;
+    display: block;
+  }
+  .one3{
+    display: block;
+    margin: 20px 10px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .more{
+    display: block;
+    margin: 20px 10px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .more ul{
+    position: absolute;
+    display: none;
+  }
+  .more:hover ul{
+    margin-top: 10px;
+    margin-left: -138px ;
+    display: block;
+  }
+  .searchbar{
+    width: 200%;
+  }
+  .textbox{
+    width:170%;
+  }
+  .textbox:focus{
+    width:170%;
+  }
+  .font{
+    font-size: medium;
+  }
+  .bg{
+    font-size: medium;
+  }
+  .bg2{
+    font-size: medium;
+  }
+  .bg4{
+    font-size: medium;
+  }
+  .cart{
+    font-size: small;
+    padding: 3px 3px 3px 3px;
+  }
+  
+ }
+
+
+ @media only screen and (min-width:640px) and (max-width:780px){
+  .font{
+    font-size: medium;
+  }
+  .one1{
+    display: block;
+    margin: 10px 10px 10px 0px;
+    padding:5px 5px 5px 5px;
+}
+.onesearch{
+  display:block;
+  margin: 10px 10px 10px 0px;
+  padding:5px 5px 5px 5px;
+}
+.searchbar{
+  width: 140%;
+}
+.textbox{
+  width:135%;
+}
+.textbox:focus{
+  width:135%;
+}
+.oneg{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 90px;
+  padding:10px 5px 5px 5px;
+}
+.one2{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 0px;
+  padding:10px 5px 5px 5px;
+}
+.one2:hover{
+  background-color: white;
+  color: blue;
+}
+.one2 ul{
+  position: absolute;
+  display: none;
+}
+.one2:hover ul{
+  margin-top:5px;
+  margin-left: -5px ;
+  
+  display: block;
+  font-size: medium;
+}
+.one3{
+  display: block;
+  font-size: large;
+  margin: 10px 0px 10px 0px;
+  padding:10px 5px 5px 5px;
+}
+.more{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 10px;
+  padding:10px 5px 5px 5px;
+}
+.more:hover{
+  color: rgb(149, 149, 153);
+  background-color: white;
+  border-style: none ;
+}
+.more ul{
+  position: absolute;
+  display: none;
+}
+.more:hover ul{
+  font-size: medium;
+  margin-top: 25px;
+  margin-left: -118px ;
+  display: block;
+}
+.store{
+  display: none;
+  font-size: medium;
+}
+.store1{
+  font-size: medium;
+}
+.store2{
+  display: none;
+  font-size: medium;
+}
+ }
+
+
+ @media only screen and (min-width:480px) and (max-width:640px){
+  .font{
+    font-size: small;
+  }
+  .one1{
+    display: block;
+    margin: 10px 10px 10px 10px;
+    padding:5px 5px 5px 5px;
+  }
+  .onesearch{
+    display:block;
+    margin: 10px 10px 10px 0px;
+    padding:5px 5px 5px 5px;
+  }
+  .searchbar{
+    width: 120%;
+  }
+  .textbox{
+    width:105%;
+  }
+  .textbox:focus{
+    width:105%;
+  }
+  .oneg{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .one2{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .one2 ul{
+    position: absolute;
+    display: none;
+  }
+  .one2:hover ul{
+    margin-top:3px;
+    margin-left: -5px ;
+    display: block;
+  }
+  .one3{
+    display: block;
+    margin: 10px 0px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .more{
+    display: block;
+    margin: 10px 10px 10px 10px;
+    padding:10px 5px 5px 5px;
+  }
+  .more:hover{
+    color: rgb(149, 149, 153);
+    background-color: white;
+    border-style: none ;
+  }
+  .more ul{
+    position: absolute;
+    display: none;
+  }
+  .more:hover ul{
+    
+    margin-top: 35px;
+    margin-left: -118px ;
+    display: block;
+  }
+  .logofont{
+    font-size: small;
+  }
+ }
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+  .one1{
+    display: block;
+    margin: 10px 10px 10px 0px;
+    padding:5px 5px 5px 5px;
+}
+.onesearch{
+  display:block;
+  margin: 10px 10px 10px 10px;
+  padding:5px 5px 5px 5px;
+}
+.searchbar{
+  width: 100%;
+}
+.textbox{
+  width:105%;
+}
+.textbox:focus{
+  width:105%;
+}
+.oneg{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 0px;
+  padding:10px 5px 5px 5px;
+}
+.one2{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 0px;
+  padding:10px 5px 5px 5px;
+}
+.one2:hover{
+  background-color: white;
+  color: blue;
+}
+.one2 ul{
+  position: absolute;
+  display: none;
+}
+.one2:hover ul{
+  margin-top:5px;
+  margin-left: -5px ;
+  
+  display: block;
+  font-size: small;
+}
+.one3{
+  display: block;
+  font-size: large;
+  margin: 10px 0px 10px 0px;
+  padding:10px 5px 5px 5px;
+}
+.more{
+  display: block;
+  font-size: large;
+  margin: 10px 10px 10px 10px;
+  padding:10px 5px 5px 5px;
+}
+.more:hover{
+  color: rgb(149, 149, 153);
+  background-color: white;
+  border-style: none ;
+}
+.more ul{
+  position: absolute;
+  display: none;
+}
+.more:hover ul{
+  font-size: small;
+  margin-top: 15px;
+  margin-left: -118px ;
+  display: block;
+}
+.imgs1{
+  width: 100px;
+  height:100px;
+  
+}
+.bg{
+  font-size: small;
+}
+.bg2{
+  font-size: small;
+}
+.bg4{
+  font-size: small;
+}
+.store{
+  display: none;
+}
+.store1{
+  display:none;
+}
+.store2{
+  display:none;
+}
 }
