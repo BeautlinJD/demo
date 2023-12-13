@@ -23,7 +23,7 @@ function Login(){
             let userData={PhoneNumber:a, Password:c}
             try {
               console.log(userData)
-              fetch("http://localhost:5000/listofusers")
+              fetch("https://beautlin.onrender.com/listofusers")
               .then((res) => res.json())
               .then((json) => {
                   console.log(json)

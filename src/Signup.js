@@ -35,7 +35,7 @@ if ((l===10)&&(o===m)&&(n>=8)){
         try {
 
           console.log(userData)
-          const response = await fetch('http://localhost:5000/users', {
+          const response = await fetch('https://beautlin.onrender.com/users', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
